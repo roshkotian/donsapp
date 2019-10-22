@@ -10,21 +10,21 @@ exports.getallposts = (req, res) => {
 }
 //save posts in mongodb
 exports.save = (req, res) => {
-   const body = req.body.body;
-   const likecount = Number(req.body.likecount);
-   const commentcount = Number(req.body.commentcount);
-   const userid= req.body.userid;
-   const imageid = req.body.imageid;//pending for sprint 2
-   const status = true;
-   const newpost = new Post ({body, likecount,commentcount,userid,imageid,status});
-   newpost.save()
-        .then(post => {
-            res.status(200).json({'post': 'Post added successfully'});
-        })
-        .catch(err => {
-           console.log(error)
-            res.status(400).send('adding new post failed');
-        });
+  const body = req.body.body;
+  const likecount = Number(req.body.likecount);
+  const commentcount = Number(req.body.commentcount);
+  const userid = req.body.userid;
+  const imageid = req.body.imageid;//pending for sprint 2
+  const status = true;
+  const newpost = new Post({ body, likecount, commentcount, userid, imageid, status });
+  newpost.save()
+    .then(post => {
+      res.status(200).json({ 'post': 'Post added successfully' });
+    })
+    .catch(err => {
+      console.log(error)
+      res.status(400).send('adding new post failed');
+    });
 
 }
 

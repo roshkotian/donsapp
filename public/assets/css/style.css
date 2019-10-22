@@ -1,0 +1,84 @@
+ 
+/* =Toolkit--------------------------------------------------------------------------------------------------*/
+/* general purpose classes */
+button:focus{outline: none;}
+.btn{ padding:13px 20px; line-height: 20px;letter-spacing: 0.32px; font-size: 1.7rem;box-shadow: none;font-weight:normal; border-radius:0; margin: 0; text-align: center; letter-spacing: 0.03em;/* box-shadow: 0 6px 14px 0 rgba(158,168,172,0.56);*/border-radius: 30px;text-transform: capitalize;background: #0093BE;border: 1px solid transparent;min-width: 100px;}
+.btn-sm{padding:8px 15px;line-height:20px; font-size: 1.2rem;}
+.btn-primary{ background:#0093BE; color: #fff; }
+.btn-primary[disabled]{ background:#E2EFF7;opacity: 1;color: #8DA3C4; pointer-events: none;}
+.btn-primary:hover,.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{background:#fff;border-color:#0093BE;box-shadow: none;color: #0093BE;}
+.no-style{background: transparent; border: none;outline: none;}
+.no-style:focus{outline: none;}
+.btn-block{width: 100%;} 
+.btn.btn-large{min-width: 243px;}
+
+/* End Toolkit========================================================*/
+/* remember to define focus styles! */ 
+:focus,.btn:focus ,a:focus{ outline: 0; box-shadow:none; }
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{ outline: 0;}
+/* =Typography--------------------------------------------------------------------------------------------------*/
+/* Setting up the fonts */
+body {font-family: 'Open Sans', sans-serif; font-size: 10px; line-height: normal; letter-spacing: 0.03em; color: #3D3D3D;background: #F4F2F0; -webkit-font-smoothing: antialiased; font-weight: normal;/*overflow: hidden; */}
+body,html{/*height:100vh;*/font-size: 10px;-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-weight: 400;}
+/* End Typography--------------------------------------------------------------------------------------------------*/
+
+
+/* =helper Classes--------------------------------------------------------------------------------------------------------*/
+p { padding:0 0 10px 0; margin:0; }
+img{max-width: 100%;}
+/* End Branding
+--------------------------------------------------------------------------------------------------------*/
+
+/* ===Forms Control*/
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */  color: #767676;}
+input::-moz-placeholder { /* Firefox 19+ */  color: #767676;}
+input:-ms-input-placeholder { /* IE 10+ */  color: #767676;}
+input:-moz-placeholder { /* Firefox 18- */  color: #767676;}
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */  color: #767676;}
+textarea::-moz-placeholder { /* Firefox 19+ */  color: #767676;}
+textarea:-ms-input-placeholder { /* IE 10+ */  color: #767676;}
+textarea:-moz-placeholder { /* Firefox 18- */  color: #767676;}
+textarea{ resize:none;}
+
+/*textarea.form-control{height: 140px;}*/
+.my-form{overflow-y: auto;height: 100%;}
+.form-group{margin-bottom:16px;}
+.form-control{font-size:1.7rem; line-height: 1.3;border: 1px solid rgba(200, 200, 200, 0.7); -webkit-appearance: none; border-radius: 4px; background: #fff; padding:15px 18px;color:  #3D3D3D;height: 66.5px;font-weight: 500;border-radius: 9px;box-shadow: 0 3px 9px 0 rgba(218,218,218,0.50);}
+.form-control:focus{box-shadow: none;border:1px solid #0093BE;;color: #3d3d3d;}
+.control-label{color: #3d3d3d; font-size: 1.3rem;font-weight:600; line-height: 18px; letter-spacing: 0.5px; margin-bottom:7px; text-transform: uppercase;}
+.input-iconright{position: relative;}
+.input-iconright .form-control{padding-right: 50px;}
+.iconright-view{position: absolute;right: 18px;top: 15px; font-size: 1.8rem;color: #C8C8C8;}
+.form-group label{font-size: 1.8rem; color: #7c7d81;font-weight: 600;margin-left: 15px;}
+.squre-input .form-control{border-radius: 0;/*box-shadow: 0 3px 9px 0 rgba(218,218,218,0.50);*/box-shadow: none;}
+
+.label-title{font-weight: normal;}
+.sub-label{font-size: 1.3rem; color: #9B9B9B;font-weight: 600;padding-bottom: 0;margin-bottom: 10px;}
+.error-block{color: red; background: rgba(255, 0, 0, 0.1); padding: 15px; position: fixed; bottom: 0; left: 0; right: 0;z-index: 80;}
+.grey-label{font-size: 1.3rem; color: #9B9B9B;font-weight: 600;}
+.info-label{font-size: 1.1rem;text-align: right;display: block;}
+.form-group .text-danger,p.text-danger.text-center{padding-bottom: 0;font-size: 1.2rem;font-weight: 600;display: block;text-align: left!important;}
+.input-with-icon{position: relative;}
+.input-with-icon input{padding-left: 40px;}
+.input-with-icon span{position: absolute;left: 20px;font-size: 1.8rem;top: 50%; transform: translateY(-50%);color: #7c7d81;}
+
+
+
+
+
+/* Login page */
+.login-page{background-image: url(../../assets/images/login-background.png); min-height: 100vh;padding:15px;display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.login-outer{width: 716px; max-width: 716px;margin: 0 auto;background: #FFFFFF; box-shadow: 0 3px 9px 0 rgba(218,218,218,0.50); border-radius: 9px;padding: 71px 15px 0px 15px;/*position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);*/}
+.login-inner {max-width: 466px; margin: 0 auto; }
+.login-logo{margin-bottom: 65px;}
+.login-form .form-group{margin-bottom: 34px;}
+.forgot-password{display: flex;justify-content: space-between;align-items: center;margin-top: 5px;margin-bottom: 65px;}
+.forgot-link .link{font-size: 1.6rem;color: #000;text-decoration: underline;}
+.signup-link {margin-bottom: 52px;}
+.signup-link .link{font-size: 1.6rem;color: #000;text-decoration: underline;}
+.login-btn{margin: 0 -15px;}
+.login-btn .btn{border-radius: 0;height: 100px;font-size: 3.2rem;}
+
+
+
+
